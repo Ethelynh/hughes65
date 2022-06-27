@@ -16,13 +16,13 @@ if __name__ == '__main__':
         st.subheader('Streamlit app')
         url = st.text_input('Enter the URL')
         url = url.replace(" ", "")
-##        if 'https' in url.lower() and (url[-13:-11] == 'v='):
-##                uid = url[-11:]
-##                st.text( 'format: HD' )
-##                vname = downloadvideo(uid)
-##                st.write(vname)
-##                st.video(f"./{vname}")
-##
-##        else:
-##                st.text( r'please enter the url like this: https://www.youtube.com/v=...' )  
+        if 'https' in url.lower() and (url[-13:-11] == 'v='):
+                uid = url[-11:]
+                st.text( 'format: HD' )
+                vname = downloadvideo(uid)
+                st.write(vname)
+                st.video(f"./{vname}")
+
+        else:
+                st.text( r'please enter the url like this: https://www.youtube.com/v=...' )  
 			

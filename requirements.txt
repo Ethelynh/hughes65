@@ -1,2 +1,2 @@
-streamlit==0.79.0
-yt-dlp==2022.5.18
+streamlit
+yt-dlp
